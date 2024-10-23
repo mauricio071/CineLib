@@ -12,6 +12,8 @@
 
 O **CineLib** é uma aplicação que oferece uma plataforma completa para visualizar informações detalhadas sobre filmes, como sinopse, orçamento, elenco e outros detalhes. O projeto lista os filmes mais populares do momento e disponibiliza um sistema de busca por título ou categorias, permitindo acesso a um extenso catálogo de filmes. Além disso, com o suporte da biblioteca i18n, o site pode ser traduzido para inglês e português, ampliando sua acessibilidade para diferentes públicos.
 
+O **CineLib** é uma aplicação que oferece uma plataforma completa para visualizar informações detalhadas sobre filmes, como sinopse, orçamento, elenco e outros detalhes. O projeto lista os filmes mais populares do momento e disponibiliza um sistema de busca por título ou categorias, permitindo acesso a um extenso catálogo de filmes. Os usuários também podem favoritar filmes, que são armazenados localmente, permitindo a criação de uma lista personalizada. Além disso, com o suporte da biblioteca i18n, o site pode ser traduzido para inglês e português, ampliando sua acessibilidade para diferentes públicos.
+
 ## 🛠 Tecnologias utilizadas
 
 -   **React.js** - Biblioteca JavaScript para construção de interfaces
