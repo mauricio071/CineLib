@@ -1,0 +1,20 @@
+.slider-container .movie_card img {
+    @apply aspect-[0.75];
+}
+
+.slick-prev:before,
+.slick-next:before {
+    @apply text-4xl;
+}
+
+.slick-prev {
+    @apply left-0 z-[10] md:left-[-30px];
+}
+
+.slick-next {
+    @apply right-[13px] z-[10] md:right-[-15px];
+}
+
+.slick-slide {
+    @apply px-2;
+}

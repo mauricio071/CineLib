@@ -1,0 +1,56 @@
+.movie_card {
+    @apply relative max-w-[360px] mx-auto w-full h-full rounded-lg overflow-hidden;
+
+    .favoriteIcon {
+        @apply absolute right-0 w-12 h-12 bg-[#d1d5dbc9] rounded-lg p-1 flex items-center justify-center cursor-pointer z-[10] duration-300;
+
+        svg {
+            @apply text-primary w-12 h-12;
+        }
+    }
+
+    .favoriteIcon:hover {
+        @apply bg-[#b7babd];
+    }
+
+    .movie_poster img {
+        @apply w-full h-full object-cover opacity-100 duration-[.6s];
+    }
+
+    .movie_infos {
+        @apply absolute bottom-0 h-[200px] w-full flex flex-col justify-end p-[10px];
+        background: linear-gradient(#00000000, #000000 90%);
+
+        .movie_title {
+            @apply text-[#f1f5f9] text-xs mb-[6px];
+        }
+
+        .hidden_content {
+            @apply text-[#f1f5f9] text-xs mt-2 h-0 opacity-0 duration-[.6s];
+
+            .btn_detail {
+                @apply block text-center bg-primary px-[6px] py-[8px] rounded-[4px] mt-[10px] text-white border-none cursor-pointer w-full;
+            }
+        }
+    }
+
+    &:hover {
+        @apply cursor-pointer;
+
+        .movie_poster img {
+            @apply brightness-50 scale-[1.03];
+        }
+
+        .hidden_content {
+            @apply opacity-100;
+        }
+
+        .movie_infos:has(.description) .hidden_content {
+            @apply h-[100px];
+        }
+
+        .movie_infos:not(:has(.description)) .hidden_content {
+            @apply h-[50px];
+        }
+    }
+}

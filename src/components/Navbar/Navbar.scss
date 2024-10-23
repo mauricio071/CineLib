@@ -1,0 +1,55 @@
+header {
+    @apply bg-black border-b-2 border-primary fixed top-0 w-full z-[9999];
+
+    .content {
+        @apply flex items-center flex-wrap justify-between h-full w-full p-4;
+
+        .logo {
+            @apply text-4xl font-semibold text-primary duration-300 block;
+
+            &:hover {
+                text-shadow: 0 0 10px #b71c1c;
+            }
+        }
+
+        .menu-icon {
+            @apply h-10 w-10 text-white cursor-pointer lg:hidden;
+        }
+
+        nav {
+            @apply flex-col gap-4 w-full p-4 lg:w-auto lg:flex-row lg:items-center lg:gap-8 lg:p-0;
+
+            a {
+                @apply font-semibold no-underline text-white text-lg duration-300;
+
+                &:hover {
+                    @apply text-primary !important;
+                }
+            }
+
+            .searchbar {
+                @apply w-full bg-[#ffffff42] border-2 border-[#ffffff42] flex items-center rounded-[60px] py-[5px] px-[15px];
+
+                input {
+                    @apply bg-transparent flex-1 px-[10px] text-[16px] text-gray-200 min-w-0;
+                }
+
+                input::-webkit-search-cancel-button {
+                    @apply cursor-pointer;
+                }
+
+                ::placeholder {
+                    @apply text-gray-400;
+                }
+
+                button {
+                    @apply bg-primary rounded-[50%] text-white w-[30px] h-[30px] flex items-center justify-center text-lg cursor-pointer duration-300;
+
+                    &:hover {
+                        box-shadow: 0 0 25px #b71c1c;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.scroll-btn {
+    @apply fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full transition duration-300 opacity-0 z-[20] hover:bg-[#8f1515];
+
+    @screen md {
+        @apply bottom-16 right-16 p-4;
+    }
+
+    svg {
+        @apply text-xl;
+    }
+
+    &.show {
+        @apply opacity-100 pointer-events-auto;
+    }
+
+    &.hide {
+        @apply opacity-0 pointer-events-none;
+    }
+}

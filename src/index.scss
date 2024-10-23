@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply scroll-smooth font-sans;
+}
+
+body::-webkit-scrollbar {
+  @apply w-[12px] bg-[#222];
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-[#222];
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-[20px] border-[3px] border-[#222];
+}
+
+section:first-of-type {
+  @apply pt-16;
+}
+
+section {
+  @apply bg-secondary py-8;
+}
+
+.wrapper {
+  @apply container mx-auto;
+}
+
+.title {
+  @apply text-white text-center font-bold text-3xl mb-8 flex flex-col items-center gap-4;
+}
+
+.title::after {
+  @apply content-[''] w-[80px] h-[5px] bg-primary rounded-[5px];
+}
+
+input {
+  @apply border-none outline-none;
+}

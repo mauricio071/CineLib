@@ -1,0 +1,174 @@
+.details {
+    @apply min-h-screen bg-no-repeat bg-cover bg-fixed relative;
+
+    .banner {
+        @apply relative w-full bg-no-repeat bg-cover bg-fixed flex justify-center items-center overflow-hidden h-[450px] lg:h-[550px] xl:h-[600px] 2xl:h-[650px];
+        background-position: 50% 30%;
+
+        .custom-shape-divider-bottom {
+            @apply absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180;
+
+            svg {
+                @apply relative block h-[150px];
+                width: calc(100% + 1.3px);
+            }
+
+            .shape-fill {
+                @apply fill-[#121212];
+            }
+        }
+
+        &::before {
+            @apply content-[""] absolute inset-0 bg-black opacity-80;
+        }
+    }
+
+    .movie_details_header {
+        @apply relative flex flex-col justify-center items-center gap-12 -mt-[24rem] z-[10];
+
+        @screen lg {
+            @apply flex-row justify-start px-24 -mt-[29rem] mb-16;
+        }
+
+        @screen xl {
+            @apply max-w-[1180px];
+        }
+
+        @screen 2xl {
+            @apply max-w-[1280px];
+        }
+
+        .movie_poster img {
+            @apply aspect-[0.7] rounded-lg min-h-[20rem] max-w-[15rem] md:min-h-[25.5rem] md:max-w-[17rem] 2xl:max-w-[18rem];
+        }
+
+        .banner_info {
+            @apply flex flex-col items-center gap-6 mb-14 lg:items-start;
+
+            .favoriteIcon {
+                @apply w-12 h-12 bg-[#d1d5dbc9] rounded-lg p-1 flex items-center justify-center cursor-pointer z-[10] duration-300;
+
+                svg {
+                    @apply text-primary w-12 h-12;
+                }
+            }
+
+            .favoriteIcon:hover {
+                @apply bg-[#b7babd];
+            }
+
+            h1 {
+                @apply text-4xl font-extrabold text-white text-center lg:text-start flex items-center gap-4;
+            }
+
+            .badge_container {
+                @apply flex flex-wrap gap-2 justify-center lg:justify-start;
+            }
+
+            .rating_container {
+                @apply flex items-center gap-4;
+
+                p {
+                    @apply text-gray-200;
+                }
+            }
+        }
+    }
+
+    .movie_details_main {
+        @apply relative z-[10] lg:my-10;
+
+        .tagline {
+            @apply mb-8 items-center mx-auto max-w-[55rem] xl:mb-20;
+
+            &::after {
+                @apply w-[0];
+            }
+        }
+
+        h2 {
+            @apply items-start;
+        }
+
+        p {
+            @apply text-gray-200;
+        }
+
+        .details_container {
+            @apply max-w-[1100px] mx-auto flex flex-col gap-8;
+
+            .movie_details {
+                @apply flex flex-col-reverse justify-between gap-16 lg:flex-row lg:items-start;
+
+                .right_content {
+                    @apply space-y-8 lg:w-[40%];
+
+                    iframe {
+                        @apply aspect-video w-full rounded-lg;
+                    }
+
+                    .details_container {
+                        @apply border-2 border-gray-300 rounded-lg p-6 max-w-md mx-auto sm:px-10 sm:p-8;
+
+                        .detail {
+                            @apply flex items-center gap-2 rounded-lg;
+
+                            h3 {
+                                @apply flex items-center justify-center gap-3 text-lg font-semibold text-white;
+
+                                svg {
+                                    @apply w-6 h-6 text-white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .info_container {
+                    @apply flex flex-col gap-12 lg:w-[50%];
+
+                    p {
+                        @apply text-lg text-start lg:text-start;
+                    }
+
+                    a {
+                        @apply underline text-sky-500;
+                    }
+                }
+            }
+        }
+
+        .cast_container {
+            @apply flex flex-wrap justify-center gap-4 lg:justify-start;
+
+            .main_cast {
+                @apply relative max-w-[10rem];
+
+                img {
+                    @apply rounded-lg aspect-[125/188];
+                }
+
+                .actor_info {
+                    @apply absolute w-full py-1.5 bottom-0 bg-[#0000008e] rounded-b-lg;
+
+                    .cast_name {
+                        @apply text-sm font-bold text-center;
+                    }
+
+                    .cast_character {
+                        @apply text-gray-400 text-xs font-bold text-center;
+                    }
+                }
+            }
+        }
+
+        .gallery_container {
+            @apply max-w-4xl grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+            @screen lg {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+    }
+}

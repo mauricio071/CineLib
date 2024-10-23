@@ -1,0 +1,23 @@
+.language_switcher {
+    @apply relative;
+
+    .selector {
+        @apply w-12 h-12 flex items-center justify-between gap-4 cursor-pointer;
+    }
+
+    img {
+        @apply max-w-[2.5rem];
+    }
+
+    .list {
+        @apply w-[190px] p-4 pl-6 rounded-[6px] bg-white absolute z-[20] space-y-4 lg:left-[-70px];
+
+        .option {
+            @apply list-none cursor-pointer flex items-center gap-2;
+
+            &:hover {
+                @apply bg-[#ffffff80];
+            }
+        }
+    }
+}

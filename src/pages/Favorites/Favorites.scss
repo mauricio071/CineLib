@@ -1,0 +1,11 @@
+.favorites {
+    @apply min-h-screen bg-no-repeat bg-cover bg-fixed relative;
+
+    h2 {
+        @apply mt-16 relative;
+    }
+
+    &::before {
+        @apply content-[""] absolute top-0 left-0 w-full h-full bg-black opacity-[0.9];
+    }
+}

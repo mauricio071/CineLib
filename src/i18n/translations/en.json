@@ -1,0 +1,32 @@
+{
+    "translation": {
+        "genresMenu": "Genre",
+        "favoritesMenu": "Favorites",
+        "searchBarPlaceholder": "Search a movie",
+        "footerMessage": "Developed by",
+        "prevPagination": "Previous",
+        "nextPagination": "Next",
+        "homeHeaderMessage": "Discover and explore a vast collection of movies",
+        "homeSubTitle": "Trending movies",
+        "searchMessage": "Results found for",
+        "emptySearchMessage": "No results found.",
+        "favoriteTitle": "Favorite",
+        "favoriteSubTitle": "Favorite videos",
+        "favoriteEmpty": "No favorite movies.",
+        "notInformedTitle": "Not informed",
+        "ratingsTitle": "Ratings",
+        "summaryTitle": "Summary",
+        "companyTitle": "Companies",
+        "collectionTitle": "Collection",
+        "launchDateTitle": "Launch date",
+        "budgetTitle": "Budget",
+        "revenueTitle": "Revenue",
+        "countryTitle": "Country",
+        "runtimeTitle": "Runtime",
+        "directorCastTitle": "Director & Main Cast",
+        "imageGalleryTitle": "Image Gallery",
+        "similarTitle": "You may also like",
+        "pageNotFoundMessage": "Page not found!",
+        "pageNotFoundButton": "Go Home"
+    }
+}

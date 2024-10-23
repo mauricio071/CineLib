@@ -1,0 +1,32 @@
+{
+    "translation": {
+        "genresMenu": "Gênero",
+        "favoritesMenu": "Favoritos",
+        "searchBarPlaceholder": "Buscar um filme",
+        "footerMessage": "Desenvolvido por",
+        "prevPagination": "Voltar",
+        "nextPagination": "Próxima",
+        "homeHeaderMessage": "Descubra e explore uma vasta coleção de filmes",
+        "homeSubTitle": "Filmes em alta",
+        "searchMessage": "Resultados para",
+        "emptySearchMessage": "Nenhum resultado encontrado.",
+        "favoriteTitle": "Favoritos",
+        "favoriteSubTitle": "Vídeos favoritados",
+        "favoriteEmpty": "Nenhum vídeo favoritado",
+        "notInformedTitle": "Não informado",
+        "ratingsTitle": "Avaliações",
+        "summaryTitle": "Sinopse",
+        "companyTitle": "Empresas",
+        "collectionTitle": "Coleção",
+        "launchDateTitle": "Data de lançamento",
+        "budgetTitle": "Orçamento",
+        "revenueTitle": "Receita",
+        "countryTitle": "País",
+        "runtimeTitle": "Duração",
+        "directorCastTitle": "Diretor & Elenco Principal",
+        "imageGalleryTitle": "Galeria de Imagens",
+        "similarTitle": "Você também pode gostar",
+        "pageNotFoundMessage": "Página não encontrada!",
+        "pageNotFoundButton": "Página inicial"
+    }
+}

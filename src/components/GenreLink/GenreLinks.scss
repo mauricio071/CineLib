@@ -1,0 +1,40 @@
+.genre_mobile {
+    @apply flex items-center gap-2 cursor-pointer lg:hidden;
+}
+
+.genre_links_mobile {
+    @apply flex flex-col gap-4 h-[300px] overflow-y-scroll ml-4 lg:hidden;
+
+    a {
+        @apply text-sm font-semibold;
+    }
+
+    &::-webkit-scrollbar {
+        @apply w-[12px] bg-[#222];
+    }
+
+    &::-webkit-scrollbar-track {
+        @apply bg-[#222];
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @apply bg-primary rounded-[20px] border-[3px] border-[#222];
+    }
+}
+
+.genre_desktop {
+    @apply hidden items-center gap-2 cursor-pointer lg:flex;
+}
+
+.genre_desktop:hover+.genre_links_desktop,
+.genre_links_desktop:hover {
+    @apply grid z-[20];
+}
+
+.genre_links_desktop {
+    @apply hidden absolute top-[55px] bg-white shadow-lg p-4 rounded-lg grid-cols-3;
+}
+
+.genre_links_desktop a {
+    @apply block px-4 py-2 !text-black hover:bg-gray-100 rounded-lg;
+}

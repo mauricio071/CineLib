@@ -1,0 +1,7 @@
+.movie_rate {
+    @apply flex gap-[4px];
+
+    svg {
+        @apply text-yellow-400;
+    }
+}

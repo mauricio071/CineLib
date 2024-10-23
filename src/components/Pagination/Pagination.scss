@@ -1,0 +1,19 @@
+.pagination {
+    @apply mx-auto mt-4 max-w-xl w-full flex justify-center items-center gap-4;
+
+    input {
+        @apply max-w-[3.5rem] p-2 rounded-lg sm:max-w-[6rem];
+    }
+
+    span {
+        @apply text-white text-sm sm:text-xl;
+    }
+
+    button {
+        @apply min-w-[5.5rem] bg-primary text-white px-4 py-2 rounded-lg font-semibold duration-300 sm:min-w-[7rem];
+
+        &:hover {
+            @apply bg-[#961717];
+        }
+    }
+}
