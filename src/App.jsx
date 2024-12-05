@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
-import './App.scss';
+import { useState, useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import "./App.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { FaArrowUp } from 'react-icons/fa6';
+import { FaArrowUp } from "react-icons/fa6";
 import "./i18n/index";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
+import CookieBanner from "./components/CookieBanner";
 
 function App() {
   const location = useLocation();
@@ -24,7 +25,7 @@ function App() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
@@ -60,6 +61,7 @@ function App() {
       >
         <FaArrowUp />
       </button>
+      <CookieBanner />
       <Footer />
     </>
   );

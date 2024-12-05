@@ -1,0 +1,23 @@
+.cookie-banner {
+  @apply w-full fixed bottom-0 bg-[#e7e7e7] z-30  py-6 px-8 flex flex-col items-center gap-4;
+
+  @screen lg {
+    @apply max-w-[465px] right-14 bottom-14 rounded-lg items-start;
+  }
+
+  h3 {
+    @apply text-2xl font-bold;
+  }
+
+  p {
+    @apply max-w-lg text-center lg:text-start;
+  }
+
+  button {
+    @apply bg-primary text-white py-2.5 px-8 rounded-lg duration-300 lg:self-start;
+
+    &:hover {
+      @apply bg-[#9e1717];
+    }
+  }
+}
