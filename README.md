@@ -94,4 +94,4 @@ VITE_IMG_CARD=https://image.tmdb.org/t/p/w500
 ```bash 
 $ npm run dev
 ```
-Agora você pode acessar o projeto no navegador em http://localhost:5173/ (ou na porta indicada pelo terminal).
+Agora você pode acessar o projeto no navegador em http://localhost:5173 (ou na porta indicada pelo terminal).
