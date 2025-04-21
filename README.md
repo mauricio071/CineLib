@@ -18,12 +18,14 @@ O **CineLib** é uma aplicação que oferece uma plataforma completa para visual
 
 -   **React.js** - Biblioteca JavaScript para construção de interfaces
 -   **Vite** - Ferramenta de build rápida para desenvolvimento front-end
--   **JavaScript** - Linguagem de programação
+-   **JavaScript** - Linguagem de programação para desenvolvimento web
 -   **HTML** - Linguagem de marcação que estrutura o conteúdo na web
 -   **CSS** - Linguagem de estilos usada para definir o visual das interfaces web
 -   **SASS** - Extensão do CSS com recursos poderosos
 -   **Tailwind CSS** - Framework de estilos
 -   **i18n** - Biblioteca para internacionalização
+
+
 
 ## 📸 Screenshots
 
