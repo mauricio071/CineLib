@@ -133,6 +133,7 @@ export function useDetails() {
   };
 
   return {
+    i18n,
     t,
     addFavorite,
     trailer,

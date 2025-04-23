@@ -2,7 +2,9 @@ import { BsGraphUp, BsHourglassSplit } from "react-icons/bs";
 import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
 import { LiaMoneyBillWaveSolid } from "react-icons/lia";
 import { FaGlobeAmericas } from "react-icons/fa";
+import { ptBR, enUS } from "date-fns/locale";
 import { RxCalendar } from "react-icons/rx";
+import { format } from "date-fns";
 
 import CarouselMovies from "../../components/CarouselMovies";
 import { apiAvatar, apiImgs } from "../../constants/apiKeys";
@@ -16,6 +18,7 @@ import "./Details.scss";
 function Details() {
   const {
     t,
+    i18n,
     addFavorite,
     trailer,
     mainActors,
@@ -171,10 +174,34 @@ function Details() {
                             <RxCalendar className="!text-[#FF4081]" />{" "}
                             {t("launchDateTitle")}:
                           </h3>
-                          {movie.release_date ? (
-                            <p>{movie.release_date}</p>
-                          ) : (
+                          {!movie.release_date ? (
                             <p>{t("notInformedTitle")}</p>
+                          ) : i18n.language === "ptBR" ? (
+                            <p>
+                              {format(
+                                new Date(movie.release_date),
+                                "dd/MM/yyyy",
+                                {
+                                  locale: ptBR,
+                                }
+                              ).replace(
+                                /(\d{2}) (\w{3}), (\d{4})/,
+                                (_, d, m, y) =>
+                                  `${d} ${
+                                    m[0].toUpperCase() + m.slice(1)
+                                  }, ${y}`
+                              )}
+                            </p>
+                          ) : (
+                            <p>
+                              {format(
+                                new Date(movie.release_date),
+                                "MM/dd/yyyy",
+                                {
+                                  locale: enUS,
+                                }
+                              ).replace(/^\w/, (c) => c.toUpperCase())}
+                            </p>
                           )}
                         </div>
                         <div className="detail">
