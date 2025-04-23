@@ -1,23 +1,69 @@
 .searchbar {
-    @apply w-full max-w-[700px] bg-[#ffffff42] border-2 border-[#ffffff42] flex items-center rounded-[60px] py-[10px] px-[20px];
+  @apply relative w-full max-w-[700px] bg-[#ffffff42] border-2 border-[#ffffff42] flex items-center rounded-[60px] py-[10px] px-[20px] z-[21];
 
-    input {
-        @apply bg-transparent flex-1 py-2 px-[20px] text-[20px] text-gray-200 min-w-0;
+  input {
+    @apply bg-transparent flex-1 py-2 px-[20px] text-[20px] text-gray-200 min-w-0;
+  }
+
+  input::-webkit-search-cancel-button {
+    @apply cursor-pointer;
+  }
+
+  ::placeholder {
+    @apply text-gray-400;
+  }
+
+  button {
+    @apply bg-primary rounded-[50%] text-white w-[45px] h-[45px] flex items-center justify-center text-2xl cursor-pointer duration-300;
+
+    &:hover {
+      box-shadow: 0 0 25px #b71c1c;
     }
+  }
+}
 
-    input::-webkit-search-cancel-button {
-        @apply cursor-pointer;
-    }
+.results {
+  @apply absolute top-[4.5rem] left-0 bg-tertiary shadow-lg rounded-md w-full;
 
-    ::placeholder {
-        @apply text-gray-400;
-    }
+  .result {
+    .result-link {
+      @apply flex items-center gap-5 px-4 py-4 bg-tertiary rounded-md;
 
-    button {
-        @apply bg-primary rounded-[50%] text-white w-[45px] h-[45px] flex items-center justify-center text-2xl cursor-pointer duration-300;
+      &:hover {
+        @apply bg-[#2a2a2a] !important;
+      }
 
-        &:hover {
-            box-shadow: 0 0 25px #b71c1c;
+      &:hover:first-of-type {
+        @apply rounded-t-md;
+      }
+
+      &:hover:last-of-type {
+        @apply rounded-b-md;
+      }
+
+      img {
+        @apply max-w-20;
+      }
+
+      .result-details {
+        @apply flex flex-col gap-2.5 overflow-hidden;
+
+        h3 {
+          @apply text-gray-300 w-full overflow-hidden text-ellipsis whitespace-nowrap font-bold;
         }
+
+        span {
+          @apply text-gray-400 text-sm;
+        }
+      }
     }
+
+    &:nth-child(2n) .result-link {
+      @apply bg-[#181818];
+    }
+  }
+
+  .empty-message {
+    @apply text-gray-300 text-center px-4 py-8;
+  }
 }

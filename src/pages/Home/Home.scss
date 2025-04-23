@@ -1,37 +1,37 @@
 .home .banner {
-    @apply relative w-full bg-no-repeat bg-cover bg-fixed flex justify-center items-center h-[550px] lg:h-[625px];
-    background-position: 50% 30%;
+  @apply relative w-full bg-no-repeat bg-cover bg-fixed flex justify-center items-center h-[550px] lg:h-[625px];
+  background-position: 50% 30%;
 
-    .banner_content {
-        @apply flex flex-col justify-center items-center gap-4 px-8 py-16 mb-8 w-full max-w-2xl z-[1];
+  .banner_content {
+    @apply flex flex-col justify-center items-center gap-4 px-8 py-16 mb-8 w-full max-w-2xl z-[11];
 
-        h1 {
-            @apply text-[4rem] font-semibold text-primary duration-300 lg:text-[5rem];
+    h1 {
+      @apply text-[4rem] font-semibold text-primary duration-300 lg:text-[5rem];
 
-            &:hover {
-                text-shadow: 0 0 10px #b71c1c;
-            }
-        }
-
-        h2 {
-            @apply text-white font-bold text-xl mb-4 text-center;
-        }
+      &:hover {
+        text-shadow: 0 0 10px #b71c1c;
+      }
     }
 
-    .custom-shape-divider-bottom {
-        @apply absolute bottom-0 left-0 w-full overflow-hidden leading-[0];
+    h2 {
+      @apply text-white font-bold text-xl mb-4 text-center;
+    }
+  }
 
-        svg {
-            @apply relative block h-[120px];
-            width: calc(100% + 1.3px);
-        }
+  .custom-shape-divider-bottom {
+    @apply absolute bottom-0 left-0 w-full overflow-hidden leading-[0];
 
-        .shape-fill {
-            @apply fill-[#121212];
-        }
+    svg {
+      @apply relative block h-[120px];
+      width: calc(100% + 1.3px);
     }
 
-    &::before {
-        @apply content-[""] absolute top-0 left-0 w-full h-full bg-black opacity-70;
+    .shape-fill {
+      @apply fill-[#121212];
     }
+  }
+
+  &::before {
+    @apply content-[""] absolute top-0 left-0 w-full h-full bg-black opacity-70;
+  }
 }

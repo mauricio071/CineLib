@@ -1,25 +1,25 @@
 .banner_search .banner {
-    @apply relative w-full h-[400px] bg-no-repeat bg-cover bg-fixed flex justify-center items-center lg:h-[500px];
-    background-position: 50% 30%;
+  @apply relative w-full h-[400px] bg-no-repeat bg-cover bg-fixed flex justify-center items-center lg:h-[500px];
+  background-position: 50% 30%;
 
-    .banner_content {
-        @apply flex flex-col justify-center items-center gap-4 px-8 py-16 max-w-2xl w-full z-[1] mb-12 lg:mb-8;
+  .banner_content {
+    @apply flex flex-col justify-center items-center gap-4 px-8 py-16 max-w-2xl w-full z-[11] mb-12 lg:mb-8;
+  }
+
+  .custom-shape-divider-bottom {
+    @apply absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180;
+
+    svg {
+      @apply relative block h-[100px];
+      width: calc(100% + 1.3px);
     }
 
-    .custom-shape-divider-bottom {
-        @apply absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180;
-
-        svg {
-            @apply relative block h-[100px];
-            width: calc(100% + 1.3px);
-        }
-
-        .shape-fill {
-            @apply fill-[#121212];
-        }
+    .shape-fill {
+      @apply fill-[#121212];
     }
+  }
 
-    &::before {
-        @apply content-[""] absolute top-0 left-0 w-full h-full bg-black opacity-70;
-    }
+  &::before {
+    @apply content-[""] absolute top-0 left-0 w-full h-full bg-black opacity-70;
+  }
 }
