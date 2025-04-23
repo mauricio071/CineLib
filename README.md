@@ -6,6 +6,8 @@
   <img alt="Github Language Count" src="https://img.shields.io/github/languages/count/mauricio071/CineLib?color=00bfa6">
   <img width="1" />
   <img alt="Github Top Language" src="https://img.shields.io/github/languages/top/mauricio071/CineLib?color=00bfa6">
+  <img width="1" />
+  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/mauricio071/CineLib?color=00bfa6">
 </p>
 
 ## 📝 Sobre o projeto
@@ -16,12 +18,14 @@ O **CineLib** é uma aplicação que oferece uma plataforma completa para visual
 
 -   **React.js** - Biblioteca JavaScript para construção de interfaces
 -   **Vite** - Ferramenta de build rápida para desenvolvimento front-end
--   **JavaScript** - Linguagem de programação
--   **HTML** - Estrutura do conteúdo
--   **CSS** - Estilização da interface
+-   **JavaScript** - Linguagem de programação para desenvolvimento web
+-   **HTML** - Linguagem de marcação que estrutura o conteúdo na web
+-   **CSS** - Linguagem de estilos usada para definir o visual das interfaces web
 -   **SASS** - Extensão do CSS com recursos poderosos
 -   **Tailwind CSS** - Framework de estilos
 -   **i18n** - Biblioteca para internacionalização
+
+
 
 ## 📸 Screenshots
 
@@ -94,4 +98,4 @@ VITE_IMG_CARD=https://image.tmdb.org/t/p/w500
 ```bash 
 $ npm run dev
 ```
-Agora você pode acessar o projeto no navegador em http://localhost:5173/ (ou na porta indicada pelo terminal).
+Agora você pode acessar o projeto no navegador em http://localhost:5173 (ou na porta indicada pelo terminal).
