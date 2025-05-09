@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -33,7 +33,7 @@ section {
 }
 
 .title {
-  @apply text-white text-center font-bold text-3xl mb-8 flex flex-col items-center gap-4;
+  @apply text-white text-center font-bold text-2xl mb-8 flex flex-col items-center gap-4 md:text-3xl;
 }
 
 .title::after {
