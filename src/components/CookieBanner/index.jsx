@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import "./CookieBanner.scss";
 
 function CookieBanner() {
+  const { t } = useTranslation();
+
   const [showBanner, setShowBanner] = useState(null);
 
   useEffect(() => {
@@ -22,12 +25,9 @@ function CookieBanner() {
     <>
       {showBanner && (
         <div className="cookie-banner">
-          <h3>Esse site usa cookies</h3>
-          <p>
-            Este site usa cookies para melhorar sua experiência. Ao continuar
-            navegando, você concorda com o uso de cookies.
-          </p>
-          <button onClick={setCookie}>Concordo</button>
+          <h3>{t("cookieBannerTitle")}</h3>
+          <p>{t("cookieBannerMessage")}</p>
+          <button onClick={setCookie}>{t("cookieBannerButton")}</button>
         </div>
       )}
     </>
